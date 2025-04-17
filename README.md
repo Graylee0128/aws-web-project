@@ -64,17 +64,20 @@ http://18.162.194.92/wp-admin/
 
 1. 登入 AWS 控制台。
 2. 創建 VPC、子網及路由表。
-3. 創建並配置 EC2 實例，並選擇適當的安全群組。
-4. 創建 RDS 實例，配置適當的資料庫設置。
-5. 配置安全群組規則以確保 EC2 和 RDS 實例之間的通信。
+3. 創建並配置 EC2，並選擇適當的安全群組。
+4. 創建 RDS，配置適當的資料庫設置。
+5. 配置安全群組規則以確保 EC2 和 RDS 之間的通信。
 6. 部署應用程式並配置資料庫連接。
 
 
-## 未來擴展建議
+## 未來擴展
 
 ### 🔁 多 AZ 部署（提高可用性）
 - 將 RDS 設為 Multi-AZ
 - 在另一 AZ 部署 EC2，並設 Application Load Balancer (ALB)
+- 如果流量上去了，設置 Auto Scaling Group (ASG)
+
+### 加上 Domain Name，整合DNS (Route53)
 
 ### 📦 自動化基礎建設：Terraform
-使用 Terraform 將上述資源程式碼化（Infrastructure as Code）
+使用 Terraform 將上述資源程式碼化（Infrastructure as Code），方便做版本管理
