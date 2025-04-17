@@ -9,7 +9,7 @@ http://18.162.194.92/wp-admin/
 
 - AWS VPC / Subnet / IGW
 - AWS EC2
-- AWS RDS (MySQL / PostgreSQL)
+- AWS RDS 
 - AWS Security Group
 
 
@@ -26,7 +26,7 @@ http://18.162.194.92/wp-admin/
 - 開放 HTTP (80)、SSH (22)。
 - 指定對應 Security Group。
 
-### 🗄 RDS (Database)
+### 🗄 RDS (mariadb)
 - 位於 Private Subnet，不對外開放。
 - 僅允許來自 EC2 的安全群組連線。
 
